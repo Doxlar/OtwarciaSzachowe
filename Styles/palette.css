@@ -1,0 +1,74 @@
+html.green {
+  --bg-dark: oklch(0 0 0);
+  --bg: oklch(0.2 0 0);
+  --bg-light: oklch(0.24 0 0);
+  --text: oklch(0.9 0 0);
+  --text-muted: oklch(0.7 0 0);
+  --accent-bg: oklch(0.24 0.0872 144.19);
+  --accent: oklch(0.34 0.0872 144.19);
+  --accent-light: oklch(0.4 0.0872 144.19);
+  --highlight: oklch(0.4 0 0);
+  --border: oklch(0.3 0 0);
+  --shadow: 10px 10px 10px hsla(0, 0%, 0%, 0.07),
+    10px 10px 10px hsla(0, 0%, 0%, 0.5);
+  --accent-gradient: linear-gradient(
+    0deg,
+    oklch(0.24 0.0872 144.19),
+    oklch(0.34 0.0872 144.19)
+  );
+  --accent-gradient-hover: linear-gradient(
+    0deg,
+    oklch(0.26 0.0872 144.19),
+    oklch(0.4 0.0872 144.19)
+  );
+}
+
+html.blue {
+  --bg-dark: oklch(0 0 0);
+  --bg: oklch(0.2 0 0);
+  --bg-light: oklch(0.24 0 0);
+  --text: oklch(0.9 0 0);
+  --text-muted: oklch(0.7 0 0);
+  --accent-bg: oklch(0.1 0.1055 258.46);
+  --accent: oklch(0.27 0.1055 258.46);
+  --accent-light: oklch(0.4 0.1055 258.46);
+  --highlight: oklch(0.4 0 0);
+  --border: oklch(0.3 0 0);
+  --shadow: 10px 10px 10px hsla(0, 0%, 0%, 0.07),
+    10px 10px 10px hsla(0, 0%, 0%, 0.5);
+  --accent-gradient: linear-gradient(
+    0deg,
+    oklch(0.27 0.1055 258.46),
+    oklch(0.36 0.1055 258.46)
+  );
+  --accent-gradient-hover: linear-gradient(
+    0deg,
+    oklch(0.32 0.1055 258.46),
+    oklch(0.4 0.1055 258.46)
+  );
+}
+
+html.brown {
+  --bg-dark: oklch(0 0 0);
+  --bg: oklch(0.2 0 0);
+  --bg-light: oklch(0.24 0 0);
+  --text: oklch(0.9 0 0);
+  --text-muted: oklch(0.7 0 0);
+  --accent-bg: oklch(0.1 0.0678 54.53);
+  --accent: oklch(0.35 0.0678 54.53);
+  --accent-light: oklch(0.48 0.0678 54.53);
+  --highlight: oklch(0.4 0 0);
+  --border: oklch(0.3 0 0);
+  --shadow: 10px 10px 10px hsla(0, 0%, 0%, 0.07),
+    10px 10px 10px hsla(0, 0%, 0%, 0.5);
+  --accent-gradient: linear-gradient(
+    0deg,
+    oklch(0.35 0.0678 54.53),
+    oklch(0.42 0.0678 54.53)
+  );
+  --accent-gradient-hover: linear-gradient(
+    0deg,
+    oklch(0.38 0.0678 54.53),
+    oklch(0.48 0.0678 54.53)
+  );
+}

@@ -1,0 +1,86 @@
+.lg-screen {
+  display: inherit;
+}
+
+.sm-screen {
+  display: none;
+}
+
+@media (max-width: 1540px) {
+  .learn-grid {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 4fr 2fr;
+    grid-template-areas:
+      "title"
+      "select"
+      "board"
+      "moves";
+  }
+  .openingSelect {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 1040px) {
+  .nav-grid {
+    grid-template-columns: 130px 130px repeat(5, 1fr) 52px;
+    grid-template-areas: "home_img time home learn practice gallery contact settings";
+  }
+}
+
+@media (max-width: 960px) {
+  .lg-screen {
+    display: none;
+  }
+  .sm-screen {
+    display: inherit;
+  }
+  .nav-grid {
+    grid-template-columns: 130px repeat(5, 1fr) 52px;
+    grid-template-areas: "time home learn practice gallery contact settings";
+  }
+  .nav-item-home_img {
+    display: none;
+  }
+  .content-grid {
+    grid-template-rows: 200px 700px 700px 700px 230px;
+    grid-template-areas:
+      "home home"
+      "learn learn"
+      "practice practice"
+      "gallery gallery"
+      "contact news";
+  }
+  .main-board-container {
+    position: relative;
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-grid {
+    grid-template-columns: repeat(5, 1fr) 52px;
+    grid-template-areas: "home learn practice gallery contact settings";
+  }
+  .nav-time {
+    display: none;
+  }
+  .content-grid {
+    grid-template-rows: 200px 700px 700px 700px 230px 230px;
+    grid-template-areas:
+      "home home"
+      "learn learn"
+      "practice practice"
+      "gallery gallery"
+      "contact contact"
+      "news news";
+  }
+}

@@ -1,0 +1,7 @@
+.footer {
+  color: var(--text-muted);
+  background-color: var(--bg);
+  align-content: center;
+  border-radius: 16px;
+  text-indent: 10px;
+}

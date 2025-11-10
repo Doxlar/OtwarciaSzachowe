@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl" class="green">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria</title>
+    <script src="Scripts/index.js" defer></script>
+    <script src="Scripts/theme.js" defer></script>
+    <script src="Scripts/overlay.js" defer></script>
+    <script src="Scripts/imgOpenings.js" defer></script>
+    <script src="Scripts/openingHandler.js" defer></script>
+    <link rel="stylesheet" href="./Styles/palette.css" />
+    <link rel="stylesheet" href="./Styles/font_sizes.css" />
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <link rel="stylesheet" href="./Styles/nav_bar.css" />
+    <link rel="stylesheet" href="./Styles/content.css" />
+    <link rel="stylesheet" href="./Styles/footer.css" />
+    <link rel="stylesheet" href="./Styles/media.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="overlay">
+      <div id="settings-box">
+        <button class="close" onclick="overlayOff()">&times;</button>
+        <h2>Figury</h2>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+          "
+        >
+          <h3 class="setting-button" id="alpha-switch">Alpha</h3>
+          <h3 class="setting-button" id="alt-switch">Cburnett</h3>
+        </div>
+
+        <h2>Motyw</h2>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+          "
+        >
+          <h3 class="setting-button" id="green-switch">Zielony</h3>
+          <h3 class="setting-button" id="blue-switch">Niebieski</h3>
+          <h3 class="setting-button" id="brown-switch">Brązowy</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-grid">
+      <nav class="nav-grid lg-screen">
+        <a href="index.html" class="nav-item nav-item-home_img"
+          ><img src="Imgs/Navbar/Logo_Light.png" style="max-height: 44px" />
+        </a>
+        <div class="nav-time" style="align-self: center; justify-self: left">
+          <div class="clock">
+            <span class="hr">00</span>
+            <span>:</span>
+            <span class="min">00</span>
+            <span>:</span>
+            <span class="sec">00</span>
+          </div>
+        </div>
+        <a href="index.html" class="nav-item nav-item-home">Start</a>
+        <a href="learn.html" class="nav-item nav-item-learn">Ucz się</a>
+        <a href="practice.html" class="nav-item nav-item-practice">Ćwicz</a>
+        <a href="gallery.html" class="nav-item nav-item-gallery">Galeria</a>
+        <a href="contact.html" class="nav-item nav-item-contact">Kontakt</a>
+        <div class="nav-item nav-item-settings">
+          <img
+            src="Imgs/NavBar/Settings_Light.png"
+            style="max-height: 44px"
+            class="cog"
+            onclick="overlayOn()"
+          />
+        </div>
+      </nav>
+      <nav class="nav-grid sm-screen">
+        <a href="index.html" class="nav-item nav-item-home_img"
+          ><img src="Imgs/NavBar/Logo_Light.png" style="max-height: 44px" />
+        </a>
+        <div class="nav-time" style="align-self: center; justify-self: center">
+          <div class="clock">
+            <span class="hr">00</span>
+            <span>:</span>
+            <span class="min">00</span>
+            <span>:</span>
+            <span class="sec">00</span>
+          </div>
+        </div>
+        <a href="index.html" class="nav-item nav-item-home"
+          ><img src="Imgs/NavBar/Home_Light.png" style="max-height: 44px"
+        /></a>
+        <a href="learn.html" class="nav-item nav-item-learn"
+          ><img src="Imgs/NavBar/Learn_Light.png" style="max-height: 44px"
+        /></a>
+        <a href="practice.html" class="nav-item nav-item-practice"
+          ><img src="Imgs/NavBar/Practice_Light.png" style="max-height: 44px"
+        /></a>
+        <a href="gallery.html" class="nav-item nav-item-gallery"
+          ><img src="Imgs/NavBar/Gallery_Light.png" style="max-height: 44px"
+        /></a>
+        <a href="contact.html" class="nav-item nav-item-contact"
+          ><img src="Imgs/NavBar/Contact_Light.png" style="max-height: 44px"
+        /></a>
+        <div class="nav-item nav-item-settings">
+          <img
+            src="Imgs/NavBar/Settings_Light.png"
+            style="max-height: 44px"
+            class="cog"
+            onclick="overlayOn()"
+          />
+        </div>
+      </nav>
+
+      <div class="gallery-grid">
+        <h1 class="gallery-item" style="margin: 0">Galeria debiutów</h1>
+        <div class="gallery-imgs">
+          <div class="board-container">
+            <img src="Imgs/Boards/green.png" class="board" />
+          </div>
+          <div class="board-container">
+            <img src="Imgs/Boards/green.png" class="board" />
+          </div>
+          <div class="board-container">
+            <img src="Imgs/Boards/green.png" class="board" />
+          </div>
+          <div class="board-container">
+            <img src="Imgs/Boards/green.png" class="board" />
+          </div>
+          <div class="board-container">
+            <img src="Imgs/Boards/green.png" class="board" />
+          </div>
+        </div>
+        <h1 class="gallery-item" style="margin: 0">Naucz się więcej</h1>
+        <div class="gallery-imgs">
+          <iframe
+            style="padding: 20px"
+            width="400px"
+            height="400px"
+            src="https://www.youtube.com/embed/SF8KtL1t3k4"
+            title="DEBIUTY 2.0 | #16- GAMBIT WIEDEŃSKI"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <footer class="footer">Jakub Kurczyna</footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pl" class="green">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ćwicz</title>
+    <script src="Scripts/index.js" defer></script>
+    <script src="Scripts/theme.js" defer></script>
+    <script src="Scripts/overlay.js" defer></script>
+    <script src="Scripts/openingsPractice.js" defer></script>
+    <script src="Scripts/openingHandler.js" defer></script>
+    <link rel="stylesheet" href="./Styles/palette.css" />
+    <link rel="stylesheet" href="./Styles/font_sizes.css" />
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <link rel="stylesheet" href="./Styles/nav_bar.css" />
+    <link rel="stylesheet" href="./Styles/content.css" />
+    <link rel="stylesheet" href="./Styles/footer.css" />
+    <link rel="stylesheet" href="./Styles/media.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="overlay">
+      <div id="settings-box">
+        <button class="close" onclick="overlayOff()">&times;</button>
+        <h2>Figury</h2>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+          "
+        >
+          <h3 class="setting-button" id="alpha-switch">Alpha</h3>
+          <h3 class="setting-button" id="alt-switch">Cburnett</h3>
+        </div>
+
+        <h2>Motyw</h2>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+          "
+        >
+          <h3 class="setting-button" id="green-switch">Zielony</h3>
+          <h3 class="setting-button" id="blue-switch">Niebieski</h3>
+          <h3 class="setting-button" id="brown-switch">Brązowy</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-grid">
+      <nav class="nav-grid lg-screen">
+        <a href="index.html" class="nav-item nav-item-home_img"
+          ><img src="Imgs/Navbar/Logo_Light.png" style="max-height: 44px" />
+        </a>
+        <div class="nav-time" style="align-self: center; justify-self: left">
+          <div class="clock">
+            <span class="hr">00</span>
+            <span>:</span>
+            <span class="min">00</span>
+            <span>:</span>
+            <span class="sec">00</span>
+          </div>
+        </div>
+        <a href="index.html" class="nav-item nav-item-home">Start</a>
+        <a href="learn.html" class="nav-item nav-item-learn">Ucz się</a>
+        <a href="practice.html" class="nav-item nav-item-practice">Ćwicz</a>
+        <a href="gallery.html" class="nav-item nav-item-gallery">Galeria</a>
+        <a href="contact.html" class="nav-item nav-item-contact">Kontakt</a>
+        <div class="nav-item nav-item-settings">
+          <img
+            src="Imgs/NavBar/Settings_Light.png"
+            style="max-height: 44px"
+            class="cog"
+            onclick="overlayOn()"
+          />
+        </div>
+      </nav>
+      <nav class="nav-grid sm-screen">
+        <a href="index.html" class="nav-item nav-item-home_img"
+          ><img src="Imgs/NavBar/Logo_Light.png" style="max-height: 44px" />
+        </a>
+        <div class="nav-time" style="align-self: center; justify-self: center">
+          <div class="clock">
+            <span class="hr">00</span>
+            <span>:</span>
+            <span class="min">00</span>
+            <span>:</span>
+            <span class="sec">00</span>
+          </div>
+        </div>
+        <a href="index.html" class="nav-item nav-item-home"
+          ><img src="Imgs/NavBar/Home_Light.png" style="max-height: 44px"
+        /></a>
+        <a href="learn.html" class="nav-item nav-item-learn"
+          ><img src="Imgs/NavBar/Learn_Light.png" style="max-height: 44px"
+        /></a>
+        <a href="practice.html" class="nav-item nav-item-practice"
+          ><img src="Imgs/NavBar/Practice_Light.png" style="max-height: 44px"
+        /></a>
+        <a href="gallery.html" class="nav-item nav-item-gallery"
+          ><img src="Imgs/NavBar/Gallery_Light.png" style="max-height: 44px"
+        /></a>
+        <a href="contact.html" class="nav-item nav-item-contact"
+          ><img src="Imgs/NavBar/Contact_Light.png" style="max-height: 44px"
+        /></a>
+        <div class="nav-item nav-item-settings">
+          <img
+            src="Imgs/NavBar/Settings_Light.png"
+            style="max-height: 44px"
+            class="cog"
+            onclick="overlayOn()"
+          />
+        </div>
+      </nav>
+
+      <div class="learn-grid">
+        <div class="learn-item learn-item-title">
+          <h1 id="title"></h1>
+          <p id="variant"></p>
+          <b></b>
+        </div>
+        <div class="learn-item learn-item-select">
+          <h1>Wybierz debiut</h1>
+          <div class="openingSelect">
+            <img
+              src="Imgs/Openings/Dutch.png"
+              style="
+                width: 150px;
+                border-radius: 16px;
+                cursor: pointer;
+                display: flex;
+              "
+              id="dutch-switch"
+            />
+            <img
+              src="Imgs/Openings/Viena.png"
+              style="
+                max-width: 150px;
+                border-radius: 16px;
+                cursor: pointer;
+                display: flex;
+              "
+              id="vienna-switch"
+            />
+          </div>
+        </div>
+        <div class="learn-item learn-item-board">
+          <div class="main-board-container" id="main-board-container-id">
+            <img
+              src="Imgs/Boards/green.png"
+              class="main-board"
+              id="main-board-id"
+            />
+          </div>
+        </div>
+        <div class="learn-item learn-item-moves">
+          <b></b>
+          <h3 id="score"></h3>
+          <p id="comment">
+            To jest testowy komentarz czarny zaciekle atakuje centruum nie
+            pozwalajac na zdobycie inicjatywy przez bialego
+          </p>
+          <div
+            style="
+              display: none;
+              flex-direction: column;
+              align-items: center;
+              width: 100%;
+            "
+            id="skip-container"
+          >
+            <div class="setting-button" style="width: 10%" id="skip-button">
+              &gt;
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 100%;
+            "
+            id="answers"
+          >
+            <div class="setting-button" style="width: 90%" id="ans1"></div>
+            <div class="setting-button" style="width: 90%" id="ans2"></div>
+            <div class="setting-button" style="width: 90%" id="ans3"></div>
+          </div>
+          <b></b>
+        </div>
+      </div>
+
+      <footer class="footer">Jakub Kurczyna</footer>
+    </div>
+  </body>
+</html>

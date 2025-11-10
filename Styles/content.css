@@ -1,0 +1,174 @@
+.content-grid {
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 220px 700px 700px 230px;
+  grid-template-areas:
+    "home home"
+    "learn practice"
+    "gallery gallery"
+    "contact news";
+}
+
+.content-item {
+  display: grid;
+  justify-items: center;
+  border-radius: 16px;
+  background-color: var(--bg);
+}
+
+.content-item-home {
+  grid-area: home;
+}
+
+.content-item-learn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  grid-area: learn;
+}
+
+.content-item-practice {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  grid-area: practice;
+}
+
+.content-item-gallery {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  grid-area: gallery;
+}
+
+.content-item-contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  grid-area: contact;
+}
+
+.content-item-news {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  grid-area: news;
+}
+
+.gallery-grid {
+  gap: 10px;
+  display: grid;
+  grid-template-rows: 100px auto 100px auto;
+  grid-template-columns: 1fr;
+}
+
+.gallery-item {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border-radius: 16px;
+  background-color: var(--bg);
+}
+
+.gallery-imgs {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  gap: 20px;
+  display: flex;
+  border-radius: 16px;
+  background-color: var(--bg);
+}
+
+.gallery-img {
+  display: flex;
+}
+
+.contact-grid {
+  gap: 10px;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  grid-template-columns: 1fr;
+}
+
+.contact-item {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border-radius: 16px;
+  background-color: var(--bg);
+}
+
+.form-grid {
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 16px;
+  background-color: var(--bg);
+}
+
+.form-flex {
+  border-radius: 16px;
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.learn-grid {
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas:
+    "title board moves"
+    "select board moves";
+}
+
+.learn-item {
+  display: grid;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  border-radius: 16px;
+  background-color: var(--bg);
+}
+
+.learn-item-title {
+  grid-area: title;
+}
+
+.learn-item-board {
+  grid-area: board;
+}
+
+.learn-item-moves {
+  grid-area: moves;
+}
+
+.learn-item-select {
+  grid-area: select;
+}
+
+.openingSelect {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}

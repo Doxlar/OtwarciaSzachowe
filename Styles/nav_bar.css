@@ -1,0 +1,79 @@
+@keyframes myAnimation {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 45deg;
+  }
+}
+
+nav {
+  background: var(--accent-gradient);
+  height: 52px;
+  border-radius: 16px;
+}
+
+.nav-grid {
+  gap: 4px;
+  display: grid;
+  grid-template-columns: 130px 140px 1fr repeat(5, 130px) 52px;
+  grid-template-rows: 52px;
+  grid-template-areas: "home_img time blank home learn practice gallery contact settings";
+}
+
+.nav-time {
+  grid-area: time;
+  color: var(--text-muted);
+  border-radius: 16px;
+}
+
+.nav-item {
+  display: grid;
+  background: var(--accent-gradient);
+  border-radius: 16px;
+  align-items: center;
+  justify-items: center;
+}
+
+.nav-item-home_img {
+  grid-area: home_img;
+}
+
+.nav-item-home {
+  grid-area: home;
+}
+
+.nav-item-practice {
+  grid-area: practice;
+}
+
+.nav-item-learn {
+  grid-area: learn;
+}
+
+.nav-item-gallery {
+  grid-area: gallery;
+}
+
+.nav-item-contact {
+  grid-area: contact;
+}
+
+.nav-item-settings {
+  grid-area: settings;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  background: var(--accent-gradient-hover);
+}
+
+.cog:hover {
+  animation-name: myAnimation;
+  animation-duration: 0.5s;
+  rotate: 45deg;
+}
+
+.clock span {
+  font-size: 20px;
+}

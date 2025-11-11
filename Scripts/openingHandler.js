@@ -122,6 +122,7 @@ document.addEventListener("keydown", (event) => {
 if (skip) {
   skip.addEventListener("click", () => {
     nextQuestion();
+    updateScore();
   });
 }
 
@@ -210,9 +211,8 @@ function clearBoard(boardCont) {
 }
 
 function updateScore() {
-  score.innerHTML = String(
-    goodAnswersCounter + "/" + practiceAnswers.children.length
-  );
+  let tmp = Math.min(practiceCounter + 1, practiceAnswers.children.length);
+  score.innerHTML = String(tmp + "/" + practiceAnswers.children.length);
 }
 
 function setPage(practiceCounter) {
@@ -247,7 +247,6 @@ function answer(i) {
   if (!(openings[opening].length == practiceCounter)) {
     if (openings[opening][practiceCounter].answers[i][2]) {
       goodAnswersCounter += 1;
-      updateScore();
     }
     showResult(i);
     practiceCounter += 1;

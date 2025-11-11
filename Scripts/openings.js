@@ -3,7 +3,7 @@ const mode = "learn";
 const openings = {
   dutch: {
     name: "Obrona holenderska",
-    variant: "Klasyczna",
+    variant: "Wariant główny z pionem f5",
     moves: [
       ["RNBKQBNRPPPPPPPP8888pppppppprnbkqbnr", "Pozycja startowa", ""],
       [

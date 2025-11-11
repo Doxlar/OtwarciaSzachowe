@@ -8,8 +8,6 @@
 
 @media (max-width: 1540px) {
   .learn-grid {
-    gap: 10px;
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 4fr 2fr;
     grid-template-areas:
@@ -62,6 +60,10 @@
     position: relative;
     height: 400px;
     width: 400px;
+  }
+  .learn-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 300px 440px 400px;
   }
 }
 
